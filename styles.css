@@ -1,0 +1,155 @@
+body{
+    background-color: black;
+    font-family: sans-serif;
+    margin: 0;
+    font-family: 'Amatic SC', cursive;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1, 25vw;
+    grid-auto-rows: repeat(5, 25vh);
+    grid-template-areas: 
+        "header"
+        "section"
+        "main"
+        "div"
+        "footer"  
+}
+
+header{
+    align-items: center;
+    background-color:white;
+    display: flex;
+    grid-area: header;
+    justify-content: space-between;
+    height: 100px;
+    padding:0;
+}
+
+section{
+    align-items: center;
+    background-color: rgb(57, 134, 185);
+    display:flex;
+    font-size: 20pt;
+    grid-area: section;
+    height: 100px;
+    justify-content: space-between;
+}
+
+img{
+    justify-content: left;
+    height: 75px;
+    width: auto;
+    margin:0;
+}
+
+.acesso a{
+    align-items: center;
+    background-color: steelblue;
+    border-radius: 10px;
+    color:black;
+    display: flex;
+    font-size: 15pt;
+    height: 5px;
+    justify-content: center;
+    margin: 0 10px;
+    padding: 30px;
+}
+
+.menu a{
+    align-items: center;
+    color: white;
+    justify-content: space-between; 
+    margin: 10px;
+    padding: 0 140px;
+    width: 100%;
+} 
+
+.menu-hamburguer{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin: 5px 0 0 5px; */
+    padding: 3px;
+    width: 45px;
+}
+.traco{
+    background-color: black;
+    border-radius: 10px;
+    height: 5px;
+    margin: 1px;
+    width: 100%;
+}
+
+.logo img{
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    padding:  0 0 0 5px;
+}
+
+main{
+    background-color:white;
+    grid-area: main;
+    height: 450px;
+}
+
+.frase{
+    /* align-items: center;
+    justify-content: space-around; */
+    width: 50%;
+}
+
+.video{
+    width: 50%;
+}
+
+.frase p{
+    align-items: center;
+    color:black;
+    justify-content: center;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.frase p:nth-child(1){
+    margin: 0.5px;
+    padding: 150px 150px 0 0;
+}
+
+.frase p:nth-child(2){
+    font-size: 25pt;
+    margin: 0.5px 0 0 0;
+    padding: 0 0 0 190px; ;
+}
+
+.sociais{
+    background-color: cornflowerblue;
+    height: 220px;
+}
+
+/* .sociais img{
+    height: 70px;
+    width: 70px;
+
+} */
+
+img .ig .gmail{
+    height: 250px;
+    border-radius: 50px;
+}
+
+footer{ 
+    background-color: lightblue;
+    grid-area: footer;
+    height: 67px;
+}
+
+footer p{
+    font-size: 18pt;
+    text-align: center;
+    
+}
