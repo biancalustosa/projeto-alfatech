@@ -3,6 +3,7 @@ body{
     font-family: sans-serif;
     margin: 0;
     font-family: 'Amatic SC', cursive;
+    
 }
 
 .grid{
@@ -25,7 +26,7 @@ header{
     justify-content: space-between;
     height: 100px;
     padding:0;
-}
+}  
 
 section{
     align-items: center;
@@ -35,6 +36,7 @@ section{
     grid-area: section;
     height: 100px;
     justify-content: space-between;
+    
 }
 
 img{
@@ -51,10 +53,13 @@ img{
     color:black;
     display: flex;
     font-size: 15pt;
+    font-weight: bold;
     height: 5px;
     justify-content: center;
     margin: 0 10px;
     padding: 30px;
+    text-decoration: none;
+    
 }
 
 .menu a{
@@ -62,7 +67,8 @@ img{
     color: white;
     justify-content: space-between; 
     margin: 10px;
-    padding: 0 140px;
+    padding: 0 150px;
+    text-decoration: none;
     width: 100%;
 } 
 
@@ -92,18 +98,30 @@ img{
 }
 
 main{
+
     background-color:white;
     grid-area: main;
-    height: 450px;
+    height: 375px;
+}
+
+.main{
+    display: flex;
+    height: 375px;
+    width: auto;
 }
 
 .frase{
     /* align-items: center;
     justify-content: space-around; */
+    /* display: flex; */
+    margin: 0;
     width: 50%;
 }
 
 .video{
+    align-items: center;
+    justify-content: center; 
+    display: flex;
     width: 50%;
 }
 
@@ -127,29 +145,81 @@ main{
 }
 
 .sociais{
-    background-color: cornflowerblue;
-    height: 220px;
+    align-items: center;
+    background-color: rgb(57, 134, 185);
+    color: white;
+    /* display: flex; */
+    /* font-size: 18pt; */
+    justify-content: center;
+    height: 292px;
+    text-align: center;
 }
 
-/* .sociais img{
-    height: 70px;
-    width: 70px;
+.sociais p:nth-child(1){
+    font-size: 30pt;
+    margin: 15px 0 0 0;
+}
 
+#parceiros{
+    font-size: 30pt;
+    margin: 10px; 5px;
+}
+.sociais img{
+    height: 65px;
+    width: 65px;
+}
+/* div img:nth-child(1){
+    margin:20px 0 0 0 ;
+    height: 50px;
+} */
+/* 
+div img:nth-child(3){
+    height: 70px;
+    width:70px;
+    padding: 35px 0 0 0;
+}
+
+div .ig {
+    height: 55px;
+    padding: 0 0 5px 0; 
+}
+div .gmail{
+    height: 55px;
+    padding: 0 0 5px 0;
 } */
 
-img .ig .gmail{
-    height: 250px;
-    border-radius: 50px;
+
+.parceiros img:nth-child(1){
+    margin: 0 5px;
 }
 
+.parceiros img:nth-child(2){
+    height: 60px;
+    margin: 0 5px;
+    width: 90px;
+}
+.parceiros img:nth-child(3){
+    margin: 0 5px;
+    width: 90px;
+}
+.parceiros img:nth-child(4){
+    margin: 0 5px;
+    width: 190px;
+}
+.parceiros img:nth-child(5){
+    height: 50px;
+    margin: 0 5px;
+    width: 190px;
+}
+    
 footer{ 
-    background-color: lightblue;
+    background-color:rgb(87, 189, 223);
     grid-area: footer;
-    height: 67px;
-}
-
+    height: 70px;
+    }
+                                                                    
 footer p{
     font-size: 18pt;
     text-align: center;
-    
+                                                                        
 }
